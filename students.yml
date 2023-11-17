@@ -1,0 +1,13 @@
+--- 
+- mystudent:
+  - name: anil 
+    phno: 464544
+    address: hyd
+
+  - name: sunil
+    phno: 464544
+    address: hyd
+
+  - name: vinil
+    phno: 464544
+    address: hyd   
