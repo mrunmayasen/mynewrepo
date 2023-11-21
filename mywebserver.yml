@@ -1,5 +1,5 @@
 --- 
-- hosts: myredhatserver
+- hosts: 172.31.46.107
   become: yes 
   tasks: 
    - name: i want to install webserver.
