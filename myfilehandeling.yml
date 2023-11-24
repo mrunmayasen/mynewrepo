@@ -19,6 +19,6 @@
       force_basic_auth: yes 
 
   - name: copy dyno file into node side 
-    templates: 
+    template: 
        src: myindexfile.j2
        dest: /var/www/html/index.html   
