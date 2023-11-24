@@ -12,9 +12,9 @@
       name: wget 
       state: present 
 
-  - name: insatll tree 
+  - name: install tree 
     apt: 
       name: tree 
       state: present 
-          
+
     
