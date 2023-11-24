@@ -7,6 +7,8 @@
     apt: 
       name: apache2 
       state: present 
+    notify: restartwebserver
+
   - name: copy my test file into node side 
     copy: 
       src: mytestfile 
@@ -22,3 +24,9 @@
     template: 
        src: myindexfile.j2
        dest: /var/www/html/index.html   
+
+  handlers: 
+   - name: restartwebserver 
+     service: 
+       name: apache2 
+       state: present
