@@ -10,4 +10,10 @@
   - name: copy my test file into node side 
     copy: 
       src: mytestfile 
-      dest: /home/ubuntu
+      dest: /home/ubuntu 
+
+  - name: download files from internet 
+    get_url: 
+      url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+      dest: /hoem/ubuntu/apache-tomcat-10.0.20.tar.gz
+      force_basic_auth: yes
