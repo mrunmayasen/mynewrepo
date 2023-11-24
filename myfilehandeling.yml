@@ -6,4 +6,8 @@
   - name: install webserver
     apt: 
       name: apache2 
-      state: present
+      state: present 
+  - name: copy my test file into node side 
+    copy: 
+      src: mytestfile 
+      dest: /home/ubuntu
